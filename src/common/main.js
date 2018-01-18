@@ -1,17 +1,14 @@
 import Vue from 'vue';
-import app from './App.vue';
-import Mint from 'mint-ui';
-import 'mint-ui/lib/style.css';
-import router from './router/index';
-import './assets/css/main.styl';
+import App from './App';
+// import Mint from 'mint-ui';
+// import 'mint-ui/lib/style.css';
+import router from './router';
 
-Vue.use(Mint);
-export default function () {
-    new Vue({
-        router,
-        el: 'app',
-        components: {
-        app
-        }
-    });
-}
+// Vue.use(Mint);
+
+new Vue({
+    el: '#app',
+    render: h => h(App),
+    components: { App },
+    router
+});
