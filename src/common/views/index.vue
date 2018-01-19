@@ -1,6 +1,16 @@
 <template>
     <div>
-        哈哈哈
+        <mu-appbar title="Title">
+            <mu-icon-button icon="close" slot="left"/>
+            <mu-icon-menu icon="more_vert" slot="right">
+                <mu-menu-item title="菜单 1"/>
+                <mu-menu-item title="菜单 2"/>
+                <mu-menu-item title="菜单 3"/>
+                <mu-menu-item title="菜单 4"/>
+                <mu-menu-item title="菜单 5"/>
+            </mu-icon-menu>
+        </mu-appbar>
+        <div class="test"></div>
     </div>
 </template>
 <script>
@@ -17,4 +27,8 @@ export default {
 };
 </script>
 <style lang="stylus" scoped>
+.test
+    background-color lightseagreen
+    width 100px
+    height 100px
 </style>
