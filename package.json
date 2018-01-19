@@ -5,6 +5,8 @@
 	"license": "MIT",
 	"scripts": {
 		"dev": "parcel -p 8080 index.html",
+		"develop": "parcel -p 8080 index.html",
+		"start": "parcel -p 8080 index.html",
 		"build": "parcel build index.html --public-url /"
 	},
 	"devDependencies": {
